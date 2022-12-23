@@ -12,61 +12,74 @@
 <body>
 
    <header class="header">
-      <nav class="navbar navbar-expand-lg navbar-light  center position" style="background-color: #bbddf6;">
-         <div class="container-fluid">
-           <a class="navbar-brand" href="#">Navbar</a>
-           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
-           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-               <li class="nav-item">
-                 <a class="nav-link active" aria-current="page" href="#">Home</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Link</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                   Dropdown
-                 </a>
-                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <li><a class="dropdown-item" href="#">Action</a></li>
-                   <li><a class="dropdown-item" href="#">Another action</a></li>
-                   <li><hr class="dropdown-divider"></li>
-                   <li><a class="dropdown-item" href="#">Something else here</a></li>
-                 </ul>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link disabled">Disabled</a>
-               </li>
-             </ul>
-             <form class="d-flex">
-               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-               <button class="btn btn-outline-success" type="submit">Search</button>
-             </form>
-           </div>
-         </div>
-       </nav>
+    
+    <nav class="navbar navbar-light bg-warning text-dark fixed-top center">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Каталог</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Контакты
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
    </header>
 
    <main class="main center">
       <h1>Example heading <span class="badge bg-secondary">New</span></h1>
 
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleControls" class="carousel  slide carousel-dark" data-bs-ride="carousel">
+        <div class="carousel-indicators ">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+
          <div class="carousel-inner">
 
-           <div class="carousel-item active ">
-             <img src="img/photo1663438861 (1).jpeg" class="d-block img-fluid w-100" alt="Картинка" id="1">
+           <div class="carousel-item active " id="1">
+             <img src="img/photo1663438861 (1).jpeg" class="d-block img-fluid w-100" alt="Картинка" >
            </div>
-           <div class="carousel-item">
-             <img src="img/photo1663438861 (2).jpeg" class="d-block img-fluid w-100 " alt="Картинка" id="2">
+           <div class="carousel-item" id="2">
+             <img src="img/photo1663438861 (2).jpeg" class="d-block img-fluid w-100 " alt="Картинка" >
            </div>
-           <div class="carousel-item">
-             <img src="img/photo1663438861 (3).jpeg" class="d-block img-fluid w-100" alt="Картинка" id="3" >
+           <div class="carousel-item" id="3">
+               <img src="img/photo1663438861 (3).jpeg" class="d-block img-fluid w-100" alt="Картинка">
            </div>
-           <div class="carousel-item">
-            <img src="img/photo1663438861.jpeg" class="d-block img-fluid  w-100" alt="Картинка" id="4" >
+           <div class="carousel-item" id="4">
+            <img src="img/photo1663438861.jpeg" class="d-block img-fluid  w-100" alt="Картинка"  >
           </div>
          </div>
          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -82,16 +95,16 @@
 
        <nav aria-label="Page navigation example" class="nav__pagination  ">
          <ul class="pagination pagination-lg ">
-           <li class="page-item">
+           <li class="page-item ">
              <a class="page-link pagination_bc" href="#" aria-label="Previous">
                <span aria-hidden="true">&laquo;</span>
              </a>
            </li>
-           <li class="page-item"><a class="page-link" href="#1">1</a></li>
-           <li class="page-item"><a class="page-link" href="#2">2</a></li>
-           <li class="page-item"><a class="page-link" href="#3">3</a></li>
-           <li class="page-item"><a class="page-link" href="#4">4</a></li>
-           <li class="page-item">
+           <li class="page-item "><a class="page-link" href="#1" >1</a></li>
+           <li class="page-item "><a class="page-link" href="#2" >2</a></li>
+           <li class="page-item "><a class="page-link" href="#3" >3</a></li>
+           <li class="page-item "><a class="page-link" href="#4" >4</a></li>
+           <li class="page-item ">
              <a class="page-link pagination_bc" href="#" aria-label="Next">
                <span aria-hidden="true">&raquo;</span>
              </a>
@@ -122,5 +135,14 @@
    </main>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+   
+    <script type="module">
+      import * as bootstrap from 'bootstrap'
+
+      new bootstrap.Popover(document.getElementById('popoverButton'))
+
+      var myCarousel = document.querySelector('#myCarousel')
+      var carousel = new bootstrap.Carousel(myCarousel)
+    </script>
 </body>
 </html>

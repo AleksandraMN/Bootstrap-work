@@ -4,9 +4,19 @@
 }
 .header {
    position: relative;
-   color: #000;
    font-size: 26px;
 }
+
+.navbar-brand {
+   color: #000;
+}
+.nav-link {
+   color: #000;
+}
+.nav-link.disabled {
+   color: #000;
+}
+
 .position {
    position: fixed;
    top: 0; 
@@ -15,11 +25,11 @@
 }
 .main {
    text-align: justify;
-   margin-top: 120px;
+   margin-top: 80px;
 }
 h1 {
    text-align: center;
-   margin-bottom: 50px;
+   margin-bottom: 40px;
 }
 .main__p {
    margin-top: 100px;
@@ -38,7 +48,7 @@ h1 {
 }
 
 .nav__pagination {
-   margin-top: 80px;
+   margin-top: 40px;
    justify-content: center;
    display: flex;
    align-items: center;
