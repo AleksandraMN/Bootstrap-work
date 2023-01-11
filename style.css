@@ -58,7 +58,7 @@ h1 {
 }
 
 
-@media(max-width: 900px) {
+@media(max-width: 1250px) {
   .center {
     padding-left: calc(50% - 47%);
     padding-right: calc(50% - 47%);
