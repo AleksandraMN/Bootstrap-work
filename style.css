@@ -36,12 +36,12 @@ h1 {
 }
 .img-fluid {
    max-width: 100%;
-   height: auto;
-   object-fit: fill;
-
+   height: cover;
+   
 }
 .carousel-control-next-icon {
    background-image: url('img/forward-solid.svg');
+   
 }
 .carousel-control-prev-icon {
    background-image: url('img/backward-solid.svg');
