@@ -57,3 +57,10 @@ h1 {
    background-color: rgb(235, 121, 222);
 }
 
+
+@media(max-width: 900px) {
+  .center {
+    padding-left: calc(50% - 47%);
+    padding-right: calc(50% - 47%);
+    width: 100vw;
+  }
